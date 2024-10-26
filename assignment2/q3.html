@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Hover Effect with CSS</title>
+    <style>
+        .container {
+            text-align: center; /* Center text and image */
+        }
+
+        .special-div {
+            color: black; /* Default text color */
+            font-size: 24px;
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        .hover-image {
+            width: 300px; /* Set image width */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 0 auto; /* Center the image */
+        }
+
+        /* Change text color on hover over the image */
+        .hover-image:hover + .special-div {
+            color: blue; /* Change text color on image hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="pic4.jpeg" alt="Hover Image" class="hover-image">
+        <div class="special-div">My Special Div</div>
+    </div>
+</body>
+</html>

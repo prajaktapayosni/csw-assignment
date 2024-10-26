@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Styled Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Font style for the body */
+            margin: 20px; /* Margin for the body */
+        }
+
+        table {
+            width: 50%; 
+            height: auto;
+            border-collapse: collapse; /* Collapse borders */
+        }
+
+        th, td {
+            border: 1px solid #dddddd; /* Border for table cells */
+            padding: 10px; /* Padding inside table cells */
+            text-align: left; /* Left-align text */
+        }
+
+        th {
+            background-color: #71e86f; /* Background color for table headers */
+        }
+
+        /* Alternate row colors */
+        tr:nth-child(1), 
+        tr:nth-child(4), 
+        tr:nth-child(7), 
+        tr:nth-child(10),
+        tr:nth-child(3n + 1) { /* Every third row after 1 */
+            background-color: #3da3d6; /* Light blue background color */
+        }
+    </style>
+</head>
+<body></body>
+    <h2>Styled HTML Table with Content</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Laptop</td>
+                <td>High performance laptop for gaming and work.</td>
+                <td>$999</td>
+            </tr>
+            <tr>
+                <td>Smartphone</td>
+                <td>Latest model with advanced features.</td>
+                <td>$799</td>
+            </tr>
+            <tr>
+                <td>Headphones</td>
+                <td>Noise-cancelling over-ear headphones.</td>
+                <td>$199</td>
+            </tr>
+            <tr>
+                <td>Smartwatch</td>
+                <td>Fitness tracking and notifications on your wrist.</td>
+                <td>$249</td>
+            </tr>
+            <tr>
+                <td>Tablet</td>
+                <td>Lightweight tablet with a large display.</td>
+                <td>$499</td>
+            </tr>
+            <tr>
+                <td>Monitor</td>
+                <td>27-inch 4K display for crisp visuals.</td>
+                <td>$299</td>
+            </tr>
+            <tr>
+                <td>Keyboard</td>
+                <td>Mechanical keyboard with customizable keys.</td>
+                <td>$89</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>Wireless mouse with ergonomic design.</td>
+                <td>$49</td>
+            </tr>
+            <tr>
+                <td>Router</td>
+                <td>High-speed Wi-Fi router for your home.</td>
+                <td>$129</td>
+            </tr>
+            <tr>
+                <td>External SSD</td>
+                <td>Portable storage with fast transfer speeds.</td>
+                <td>$99</td>
+            </tr>
+            <tr>
+                <td>Webcam</td>
+                <td>1080p webcam for streaming and video calls.</td>
+                <td>$69</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

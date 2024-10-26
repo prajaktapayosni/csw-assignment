@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+        }
+
+        .logo {
+            margin-bottom: 20px; 
+        }
+
+        .form-container {
+            background-color: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+            width: 300px; 
+        }
+
+        h2 {
+            text-align: center; 
+            margin-bottom: 20px; 
+        }
+
+        label {
+            display: block; 
+            margin: 10px 0 5px; 
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+        }
+
+        input[type="radio"] {
+            margin-right: 5px; 
+        }
+
+        .submit-button {
+            background-color: #28a745; 
+            color: white; 
+            border: none; 
+            padding: 10px; 
+            border-radius: 4px; 
+            cursor: pointer; /* Pointer on hover */
+            width: 100%; /* Full width */
+            margin-top: 10px; /* Space above button */
+        }
+
+        .submit-button:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="soalogo.png" alt="SOA Logo">
+    </div>
+
+    <div class="form-container">
+        <h2>Register</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label>Gender:</label>
+            <label>
+                <input type="radio" name="gender" value="male" required> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

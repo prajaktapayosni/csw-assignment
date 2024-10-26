@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Dropdown Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Base font style */
+            margin: 0;
+            padding: 50px; /* Padding for layout */
+            background-color: #f4f4f4; /* Light background color */
+        }
+
+        .dropdown-button {
+            background-color: #333; /* Button background color */
+            color: white; /* Button text color */
+            padding: 10px 20px; /* Button padding */
+            font-size: 16px; /* Button font size */
+            cursor: pointer; /* Pointer on hover */
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none; /* Hide by default */
+            position: absolute; /* Position it below the button */
+            background-color: white; /* Background color */
+            min-width: 200px; /* Minimum width */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+           
+        }
+
+        /* Show the dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block; /* Show dropdown on hover */
+        }
+
+        /* Individual dropdown entries */
+        .dropdown-content div {
+            padding: 12px 16px; /* Padding for entries */
+            cursor: pointer; /* Pointer on hover */
+        }
+
+        /* Different styles for each dropdown entry */
+        .entry1 {
+            font-family: 'Arial', sans-serif; /* Font style */
+            background-color: #bc6e6e; /* Light red background */
+            font-size: 14px; /* Font size */
+        }
+
+        .entry2 {
+            font-family: 'Courier New', monospace; /* Monospace font */
+            background-color: #a0e7a0; /* Light green background */
+            font-size: 16px; /* Font size */
+        }
+
+        .entry3 {
+            font-family: 'Georgia', serif; /* Serif font */
+            background-color: #a0a0e7; /* Light blue background */
+            font-size: 18px; /* Font size */
+        }
+
+        /* Hover effect for entries */
+        .dropdown-content div:hover {
+            background-color: #ddd; /* Change background on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button class="dropdown-button">Subjects</button>
+        <div class="dropdown-content">
+            <div class="entry1">Maths</div>
+            <div class="entry2">Science</div>
+            <div class="entry3">English</div>
+        </div>
+    </div>
+
+</body>
+</html>

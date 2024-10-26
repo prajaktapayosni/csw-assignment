@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Custom List with Image Marker</title>
+    <style>
+        body {
+            
+            margin: 20px; /* Add some margin to the body */
+        }
+
+        .list-container {
+            background-color: #f9f9f9; /* Optional: background color for the container */
+            padding: 20px; /* Add padding around the list */
+            border-radius: 5px; /* Optional: rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+        }
+
+        .custom-list {
+            list-style: none; /* Remove default list style */
+            padding-left: 0; /* Remove padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        .custom-list li {
+            background-image: url("soalogo.png"); /* Set the custom list marker */
+            background-size: 15px 15px; /* Adjust the size of the image */
+            background-repeat: no-repeat; /* Ensure the image does not repeat */
+            background-position: 0 50%; /* Center the image vertically */
+            padding-left: 30px; /* Space for the image */
+            line-height: 1.5; /* Line height for better spacing */
+        }
+    </style>
+</head>
+<body>
+    <div class="list-container">
+        <ul class="custom-list">
+            <li>ITER</li>
+            <li>IMS</li>
+            <li>AGRICULTURE</li>
+        </ul>
+    </div>
+</body>
+</html>
